@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-const Home = (): React.ReactElement => {
+const Home: React.FC = () => {
   return (
     <main className={styles.main}>
       <div className={styles.description}>

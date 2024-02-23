@@ -13,7 +13,9 @@ type TRootLayoutProps = {
   readonly children: React.ReactNode;
 };
 
-const RootLayout = ({ children }: TRootLayoutProps): React.ReactElement => {
+const RootLayout: React.FC<TRootLayoutProps> = ({
+  children,
+}: TRootLayoutProps) => {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
