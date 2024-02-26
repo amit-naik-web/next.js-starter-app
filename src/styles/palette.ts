@@ -1,0 +1,76 @@
+import { PaletteOptions } from "@mui/material";
+import { APP } from "./variables";
+
+const palette: PaletteOptions = {
+  mode: APP.PALETTE.MODE,
+  primary: {
+    main: APP.PALETTE.PRIMARY.MAIN,
+    light: APP.PALETTE.PRIMARY.LIGHT,
+    dark: APP.PALETTE.PRIMARY.DARK,
+    contrastText: APP.PALETTE.PRIMARY.CONTRAST_TEXT,
+  },
+  divider: APP.PALETTE.DIVIDER,
+  common: {
+    black: APP.PALETTE.COMMON.BLACK,
+    white: APP.PALETTE.COMMON.WHITE,
+  },
+  text: {
+    primary: APP.PALETTE.TEXT.PRIMARY,
+    secondary: APP.PALETTE.TEXT.SECONDARY,
+    disabled: APP.PALETTE.TEXT.DISABLED,
+  },
+  grey: {
+    50: APP.PALETTE.GREY.SHADE_50,
+    100: APP.PALETTE.GREY.SHADE_100,
+    200: APP.PALETTE.GREY.SHADE_200,
+    300: APP.PALETTE.GREY.SHADE_300,
+    400: APP.PALETTE.GREY.SHADE_400,
+    500: APP.PALETTE.GREY.SHADE_500,
+    600: APP.PALETTE.GREY.SHADE_600,
+    700: APP.PALETTE.GREY.SHADE_700,
+    800: APP.PALETTE.GREY.SHADE_800,
+    900: APP.PALETTE.GREY.SHADE_900,
+    A100: APP.PALETTE.GREY.SHADE_A100,
+    A200: APP.PALETTE.GREY.SHADE_A200,
+    A400: APP.PALETTE.GREY.SHADE_A400,
+    A700: APP.PALETTE.GREY.SHADE_700,
+  },
+  error: {
+    main: APP.PALETTE.ERROR.MAIN,
+    light: APP.PALETTE.ERROR.LIGHT,
+    dark: APP.PALETTE.ERROR.DARK,
+    contrastText: APP.PALETTE.ERROR.CONTRAST_TEXT,
+  },
+  success: {
+    main: APP.PALETTE.SUCCESS.MAIN,
+    light: APP.PALETTE.SUCCESS.LIGHT,
+    dark: APP.PALETTE.SUCCESS.DARK,
+    contrastText: APP.PALETTE.SUCCESS.CONTRAST_TEXT,
+  },
+  warning: {
+    main: APP.PALETTE.WARNING.MAIN,
+    light: APP.PALETTE.WARNING.LIGHT,
+    dark: APP.PALETTE.WARNING.DARK,
+    contrastText: APP.PALETTE.WARNING.CONTRAST_TEXT,
+  },
+  secondary: {
+    main: APP.PALETTE.SECONDARY.MAIN,
+    light: APP.PALETTE.SECONDARY.LIGHT,
+    dark: APP.PALETTE.SECONDARY.DARK,
+    contrastText: APP.PALETTE.SECONDARY.CONTRAST_TEXT,
+  },
+  info: {
+    main: APP.PALETTE.INFO.MAIN,
+    light: APP.PALETTE.INFO.LIGHT,
+    dark: APP.PALETTE.INFO.DARK,
+    contrastText: APP.PALETTE.INFO.MAIN,
+  },
+  contrastThreshold: APP.PALETTE.CONTRAST_THRESHOLD,
+  tonalOffset: APP.PALETTE.TONAL_OFFSET,
+  background: {
+    paper: APP.PALETTE.BACKGROUND.PAPER,
+    default: APP.PALETTE.BACKGROUND.DEFAULT,
+  },
+};
+
+export default palette;
