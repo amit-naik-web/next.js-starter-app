@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import theme from "@/styles/theme";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
@@ -15,11 +14,15 @@ export const metadata: Metadata = {
 
 type TRootLayoutProps = {
   readonly children: React.ReactNode;
+  params: { locale: string };
 };
 
-const RootLayout = ({ children }: TRootLayoutProps): React.ReactElement => {
+const RootLayout = ({
+  children,
+  params: { locale },
+}: TRootLayoutProps): React.ReactElement => {
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className}>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ThemeProvider theme={theme}>
