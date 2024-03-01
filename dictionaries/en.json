@@ -1,6 +1,6 @@
 {
   "APP": {
-    "APP_NAME": "HR Operations French",
+    "APP_NAME": "HR Operations",
     "LOADING": "Loading...",
     "YES": "Yes",
     "NO": "No",
@@ -28,16 +28,16 @@
   },
   "PRIVATE": {
     "DASHBOARD": {
-      "DASHBOARD_TITLE": "Dashboard French"
+      "DASHBOARD_TITLE": "Dashboard"
     },
     "TITLE": "PRIVATE TITLE",
-    "HOME": "Home French"
+    "HOME": "Home"
   },
   "PUBLIC": {
     "SIGN_IN": {
-      "TITLE": "Sign In French",
+      "TITLE": "Sign In",
       "SUBMIT": "Submit",
-      "SUBMIT_WITH_GOOGLE": "Sign in with Google",
+      "SIGN_IN_WITH_GOOGLE": "Sign in with Google",
       "FORGET_PASSWORD": "Forgot Your Password?",
       "BACK_TO_LOGIN_PAGE": "Back To Login Page",
       "EMAIL": "Email",
@@ -59,7 +59,7 @@
       }
     },
     "SOME_MODULE":{
-      "SOME_MODULE_TITLE":"Some Module French"
+      "SOME_MODULE_TITLE":"Some Module"
     }
   }
 }
