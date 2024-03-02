@@ -47,7 +47,7 @@
     "no-trailing-spaces": 2,
     "no-return-assign": [1],
     "guard-for-in": 2,
-    "spaced-comment": [1, "always"],
+    "spaced-comment":  ["error", "always", { "markers": ["/"] }],
     "valid-typeof": 2,
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/ban-ts-ignore": 0,

@@ -18,7 +18,7 @@ function getLocale(request: NextRequest): string | undefined {
   const locale = matchLocale(languages, locales, i18n.defaultLocale);
   return locale;
 }
-// @ts-ignore
+
 export function middleware(request: NextRequest) {}
 
 export function withI18nMiddleware(middleware: CustomMiddleware) {
