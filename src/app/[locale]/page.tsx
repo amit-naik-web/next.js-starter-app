@@ -6,8 +6,9 @@ import getDictionary from "../../../lib/dictionary";
 // import { signIn, signOut, useSession } from "next-auth/react";
 import TextButton from "@/src/components/TextButton";
 import { Grid } from "@mui/material";
-// import { getServerSession } from "next-auth";
-// import { authOptions } from "../api/auth/_options";
+import { getServerSession } from "next-auth";
+import { authOptions } from "../api/auth/_options";
+import { redirect } from "next/navigation";
 
 export default async function Home({
   params: { locale },
@@ -17,7 +18,11 @@ export default async function Home({
   // const t = useTranslations("APP");
   // console.log("locale", locale);
   const { APP } = await getDictionary(locale);
-  // const session = await getServerSession(authOptions);
+
+  type Tsession = {
+    user: "string";
+  };
+  const session: Tsession | null = await getServerSession(authOptions);
   // const User = session;
 
   return (
@@ -32,8 +37,14 @@ export default async function Home({
         flexDirection: "column",
       }}
     >
-      <h1>{APP.APP_NAME}</h1>
-      <TextButton text={"Sign In"} type={"submit"} />
+      {session && session.user ? (
+        <>{redirect("/dashboard")}</>
+      ) : (
+        <>
+          <h1>{APP.APP_NAME}</h1>
+          <TextButton text={"Sign In"} type={"submit"} />
+        </>
+      )}
     </Grid>
   );
 }

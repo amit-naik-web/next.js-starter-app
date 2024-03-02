@@ -1,9 +1,11 @@
-// import { useTranslations } from "next-intl";
+import getDictionary from "@../../../lib/dictionary";
+import { Locale } from "@/i18n.config";
 
-const Dashboard = (): React.ReactElement => {
-  // const t = useTranslations("SOME_MODULE");
-
-  return <h1>Some module</h1>;
-};
-
-export default Dashboard;
+export default async function SomeModule({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
+  const { SOME_MODULE } = await getDictionary(locale);
+  return <h1>{SOME_MODULE.SOME_MODULE_TITLE}</h1>;
+}

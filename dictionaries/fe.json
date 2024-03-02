@@ -57,9 +57,9 @@
         "INVALID_EMAIL": "Email must be a valid email address",
         "EMAIL_REQUIRED": "Email is required"
       }
-    },
-    "SOME_MODULE":{
-      "SOME_MODULE_TITLE":"Some Module French"
     }
+  },
+  "SOME_MODULE":{
+    "SOME_MODULE_TITLE":"Some Module French"
   }
 }
