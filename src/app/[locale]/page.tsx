@@ -1,7 +1,7 @@
 //
 
 import { Locale } from "@/i18n.config";
-import getDictionary from "../../../lib/dictionary";
+import getDictionary from "../../lib/dictionary";
 
 // import { signIn, signOut, useSession } from "next-auth/react";
 import TextButton from "@/src/components/TextButton";

@@ -1,5 +1,5 @@
 import { Locale } from "@/i18n.config";
-import getDictionary from "../../../../../lib/dictionary";
+import getDictionary from "../../../../lib/dictionary";
 import TextButton from "@/src/components/TextButton";
 import { TextField } from "@mui/material";
 // import { signIn } from "next-auth/react";

@@ -1,4 +1,4 @@
-import getDictionary from "@../../../lib/dictionary";
+import getDictionary from "@/src/lib/dictionary";
 import { Locale } from "@/i18n.config";
 
 export default async function SomeModule({

@@ -1,7 +1,7 @@
 // import { useTranslations } from "next-intl";
 
 import { Locale } from "@/i18n.config";
-import getDictionary from "@../../../lib/dictionary";
+import getDictionary from "@/src/lib/dictionary";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/src/app/api/auth/_options";
 import { Grid } from "@mui/material";
