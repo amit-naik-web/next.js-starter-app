@@ -1,7 +1,6 @@
 "use client";
-import { Button } from "@mui/material";
-import { signIn } from "next-auth/react";
 import { MouseEventHandler } from "react";
+import { Button } from "@mui/material";
 
 type TTextButtonProps = {
   text: string;
@@ -9,9 +8,9 @@ type TTextButtonProps = {
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 const TextButton = (props: TTextButtonProps): any => {
-  const { text, type } = props;
+  const { text, type, ...rest } = props;
   return (
-    <Button variant="contained" type={type} onClick={() => signIn()}>
+    <Button variant="contained" type={type} {...rest}>
       {text}
     </Button>
   );

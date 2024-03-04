@@ -1,14 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import theme from "@/styles/theme";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Locale } from "@/i18n.config";
 import Providers from "./providers";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "HR Operations",
@@ -26,7 +23,7 @@ const RootLayout = ({
 }: TRootLayoutProps): React.ReactElement => {
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body>
         <Providers>
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>
             <ThemeProvider theme={theme}>
